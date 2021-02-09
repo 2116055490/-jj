@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="#" enctype="multipart/form-data" method="POST">
+        <label for="uname">用户名：</label>
+        <input id="uname" type="text" name="username" size="50" maxlength="20" value="" placeholder="请输入"><br>
+        
+        <label for="password">密码：</label>
+        <input id="password" type="password" name="pwd" maxlength="20" placeholder="请输入密码" required><br>
+
+        <label for="fileId">上传头像:</label>
+        <input type="file" name="fileName" id="fileId" accept=".jpg,jpeg,.png" multiple>
+
+        <p><label for="">性别：</label>
+        <label for="male"><input type="radio" name="gender" id="male" value="male"><span>男</span></label>
+        <label for="female"><input type="radio" name="gender" value="female" id="female" checked><span>女</span></label>
+        </p>
+
+        <p>
+            <label for="">爱好：</label>
+            <label for="tennis">
+                <input type="checkbox" name="hoddy" id="tennis" value="tennis"><span>网球</span>
+            </label>
+            <label for="basketball">
+                <input type="checkbox" name="hobby" id="basketball" value="basketball" checked><span>篮球</span>
+            </label>
+            <label for="swimming">
+                <input type="checkbox" name="hobby" id="swimming" value="swimming"><span>游泳</span>
+            </label>
+            <label for="othor">
+                <input type="checkbox" name="hobby" id="othor" value="othor"><span>其他</span>
+            </label>
+        </p>
+
+        <p>
+            这里有隐藏域：<input type="hidden" name="id" value="4">
+        </p>
+        <p>
+            <input type="reset" value="重置请点击"/>
+            <input type="button" value="普通按钮"/>
+            <input type="submit" value="提交按钮"/>
+            <input type="date">
+            <input type="email">
+            <input type="week">
+            <input type="serch">
+        </p>
+
+        <button type="reset" style="color: red;">重置按钮</button>
+
+        <p>
+            <label for="info">简介：</label>
+            <textarea name="intro" id="info" cols="30" rows="10" placeholder="请输入..." maxlength="200">
+            </textarea>
+        </p>
+
+        <p>
+            <label for="">户籍：</label>
+            <select name="province" id="" size="3" multiple>
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="henan" selected>河南</option>
+                <option value="guangdong">广东</option>
+            </select>
+        </p>
+        </form>
+    </body>
+</html>
